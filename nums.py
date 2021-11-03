@@ -1,13 +1,15 @@
+#Лабораторная 3
 def find_missing_nums(nums):
-    n = len(nums)
+    r = len(nums)
     s = []
-    b = False
-    for i in range (1,n+1):
-        for j in range (0,n):
+    y = False
+    for i in range (1,r+1):
+        for j in range (0,r):
             if i == nums[j]:
-                b = True
+                y = True
                 continue
-        if not b:
+        if not y:
             s.append(i)
-        b = False
-    return s
+        y = False
+    return s 
+#Вывод функции
